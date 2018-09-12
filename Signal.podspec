@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Signal'
-  s.version          = '1.0.0'
+  s.version          = '2.3.2'
   s.summary          = 'Podding up signal'
 
   s.description      = <<-DESC
@@ -12,6 +12,10 @@ Pod::Spec.new do |s|
   s.author           = 'Moxie'
   s.ios.deployment_target = '10.0'
 
-  s.source           = { :git => "https://github.com/signalapp/libsignal-protocol-c.git" }
-  s.source_files = 'src/**/*.{c,h}'
+  s.source           = {
+  :git => "https://github.com/signalapp/libsignal-protocol-c.git" ,
+  :tag => "v2.3.2"
+  }
+  s.source_files = [ '**/*.c', '**/*.h' ]
+  s.public_header_files = '**/*.h'
 end
