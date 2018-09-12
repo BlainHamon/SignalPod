@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   :git => "https://github.com/signalapp/libsignal-protocol-c.git" ,
   :tag => "v2.3.2"
   }
-  s.source_files = [ '**/*.c', '**/*.h' ]
-  s.public_header_files = '**/*.h'
+  s.source_files = 'src/*.{c,h}'
+
 end
